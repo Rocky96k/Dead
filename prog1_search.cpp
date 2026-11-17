@@ -1,4 +1,4 @@
-// Student Database: Linear Search and Binary Search (using realloc)
+// Student Database: Linear Search and Binary Search 
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -11,7 +11,7 @@ struct Student
 int main()
 {
     Student *s = NULL;
-    int n = 0, searchId, i, j;
+    int n = 0, searchId ;
     char ch;
     do
     {
@@ -38,7 +38,9 @@ int main()
         if (s[i].id == searchId)
         {
             cout << "\n[Linear Search] Student Found!" << endl;
-            cout << "ID: " << s[i].id << "\nName: " << s[i].name << "\nCGPA: " << s[i].cgpa << endl;
+            cout << "ID: " << s[i].id << endl;
+            cout << "Name: "<<s[i].name<< endl;
+            cout << "CGPA: "<<s[i].cgpa<<endl;
             found = true;
             break;
         }
@@ -65,7 +67,9 @@ int main()
         if (s[mid].id == searchId)
         {
             cout << "\n[Binary Search] Student Found!" << endl;
-            cout << "ID: " << s[mid].id << "\nName: " << s[mid].name << "\nCGPA: " << s[mid].cgpa << endl;
+            cout << "ID: " << s[i].id << endl;
+            cout << "Name: "<<s[i].name<< endl;
+            cout << "CGPA: "<<s[i].cgpa<<endl;
             found = true;
             break;
         }
