@@ -67,9 +67,9 @@ int main()
         if (s[mid].id == searchId)
         {
             cout << "\n[Binary Search] Student Found!" << endl;
-            cout << "ID: " << s[i].id << endl;
-            cout << "Name: "<<s[i].name<< endl;
-            cout << "CGPA: "<<s[i].cgpa<<endl;
+            cout << "ID: " << s[mid].id << endl;
+            cout << "Name: "<<s[mid].name<< endl;
+            cout << "CGPA: "<<s[mid].cgpa<<endl;
             found = true;
             break;
         }
