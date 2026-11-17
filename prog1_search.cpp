@@ -11,7 +11,7 @@ struct Student
 int main()
 {
     Student *s = NULL;
-    int n = 0, searchId ;
+    int n = 0, searchId , i ;
     char ch;
     do
     {
