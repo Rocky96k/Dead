@@ -33,7 +33,7 @@ int main()
 
     // Linear Search
     bool found = false;
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         if (s[i].id == searchId)
         {
@@ -49,8 +49,8 @@ int main()
         cout << "\n[Linear Search] Student Not Found!" << endl;
 
     // Sort by ID (needed for Binary Search)
-    for (i = 0; i < n - 1; i++)
-        for (j = i + 1; j < n; j++)
+    for (int i = 0; i < n - 1; i++)
+        for (int j = i + 1; j < n; j++)
             if (s[i].id > s[j].id)
             {
                 Student temp = s[i];
