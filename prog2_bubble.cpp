@@ -19,32 +19,28 @@ bool after(Student a, Student b, int choice)
     return a.cgpa < b.cgpa;                             // CGPA Descending
 }
 
-// Bubble sort on array s of size n
-void bubbleSort(Student *s, int n, int choice)
+// Bubble sort on array t of size n
+void bubbleSort(Student *t, int n, int choice)
 {
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = 0; j < n - i - 1; j++)
         {
-            if (after(s[j], s[j + 1], choice))
+            if (after(t[j], t[j + 1], choice))
             {
-                Student temp = s[j];
-                s[j] = s[j + 1];
-                s[j + 1] = temp;
+                Student temp = t[j];
+                t[j] = t[j + 1];
+                t[j + 1] = temp;
             }
         }
     }
 }
 
-void display(Student *s, int n)
+void display(Student *t, int n)
 {
-    cout << "\n=== Sorted Data ===\n";
+    cout << "\nID\tName\tCGPA\n";
     for (int i = 0; i < n; i++)
-    {
-        cout << "\nID: " << s[i].id << endl;
-        cout << "Name: " << s[i].name << endl;
-        cout << "CGPA: " << s[i].cgpa << endl;
-    }
+        cout << t[i].id << "\t" << t[i].name << "\t" << t[i].cgpa << endl;
 }
 
 int main()
