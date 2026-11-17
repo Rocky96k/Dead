@@ -26,11 +26,11 @@ void bubbleSort(Student *s, int n, int choice)
     {
         for (int j = 0; j < n - i - 1; j++)
         {
-            if (after(t[j], t[j + 1], choice))
+            if (after(s[j], s[j + 1], choice))
             {
-                Student temp = t[j];
-                t[j] = t[j + 1];
-                t[j + 1] = temp;
+                Student temp = s[j];
+                s[j] = s[j + 1];
+                s[j + 1] = temp;
             }
         }
     }
