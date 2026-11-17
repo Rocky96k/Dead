@@ -40,9 +40,9 @@ void display(Student *s, int n)
 {
     cout << "\n===Sorted Data\n";
     for (int i = 0; i < n; i++)
-        cout <<"ID: "<<s[i].id<< endl;
-        cout <<"Name: "<<s[i].name<<endl;
-        cout <<"CGPA: "<<s[i].cgpa<<endl;
+        cout <<"ID: "<<s[n].id<< endl;
+        cout <<"Name: "<<s[n].name<<endl;
+        cout <<"CGPA: "<<s[n].cgpa<<endl;
 }
 
 int main()
