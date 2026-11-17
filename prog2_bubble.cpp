@@ -38,11 +38,13 @@ void bubbleSort(Student *s, int n, int choice)
 
 void display(Student *s, int n)
 {
-    cout << "\n===Sorted Data\n";
+    cout << "\n=== Sorted Data ===\n";
     for (int i = 0; i < n; i++)
-        cout <<"ID: "<<s[n].id<< endl;
-        cout <<"Name: "<<s[n].name<<endl;
-        cout <<"CGPA: "<<s[n].cgpa<<endl;
+    {
+        cout << "\nID: " << s[i].id << endl;
+        cout << "Name: " << s[i].name << endl;
+        cout << "CGPA: " << s[i].cgpa << endl;
+    }
 }
 
 int main()
